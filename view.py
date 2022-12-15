@@ -1,6 +1,6 @@
-# Сергей
 import validate
 
+# Функция главного меню
 def main_menu():
     print('Вас приветствует телефонный справочник')
     print('Главное меню')
@@ -10,19 +10,22 @@ def main_menu():
     else:
         print('Ошибка! Введите 1, 2, 3 или 4!')
 
+# Функция ввода данных от пользователя для записи в телефонную книгу
 def write_data():
-    # Функция ввода данных от пользователя
-    phone_record = [input('Введите фамилию: ').title(), input('Введите имя: ').title()]
+    phone_record = [input('Введите имя: ').title(), input('Введите фамилию: ').title()]
     phone = ''
     while not validate.check_phone(phone):
-        phone = input('Введите телефон: ')
+        phone = input('Введите номер телефона: ')
         if not validate.check_phone(phone):
             print('Телефон введен неверно. Попробуйте снова.')
     phone_record.append(phone)
     return phone_record
 
-def search_data():
-    return input('Введите фамилию: ').title()
 
+# Функция ввода данных от пользователя для поиска
+def search_data():
+    return input('Введите имя или фамилию для поиска: ').title()
+
+# Функция вывода записи телефонной книги в консоль
 def show_data(data):
-    print(data)
+    print(data.split(';'))
