@@ -3,8 +3,9 @@ import extract
 import view
 
 def phone_book():
-    menu = view.main_menu()
-    while menu != 3:
+    menu = 0
+    while menu != 4:
+        menu = view.main_menu()
         match menu:
             case 1:
                 phone_data = view.write_data()

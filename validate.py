@@ -1,2 +1,7 @@
+import re
+
+# Функция валидации номера телефона
 def check_phone(phone):
-    return True
+    if re.fullmatch('(?:\+7|8)\d{10}'):
+        return True
+    return False
