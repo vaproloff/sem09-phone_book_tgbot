@@ -22,12 +22,11 @@ def write_data():
         if not validate.check_phone(phone):
             print('Телефон введен неверно. Попробуйте снова.')
     phone_record.append(phone)
-    comment = input('Введите комментарий: ')
-    if comment:
-        phone_record.append(comment)
+    description = input('Введите описание: ')
+    if description:
+        phone_record.append(description)
     print(f'Запись внесена в книгу: {str.join(", ", phone_record)}')
     return phone_record
-
 
 # Функция ввода данных от пользователя для поиска
 def search_data():
