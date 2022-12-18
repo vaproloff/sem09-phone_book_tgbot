@@ -37,3 +37,10 @@ def show_data(data):
     print(f'Найдено записей: {len(data)}')
     for line in data:
         print(line)
+
+# Функция расширенного вывода записи телефонной книги в консоль
+def show_ext_data(data):
+    print(f'Найдено записей: {len(data)}\n')
+    for line in data:
+        for text in line:
+            print(text)
