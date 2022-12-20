@@ -1,6 +1,4 @@
-import view
-
-# Функция поиска и вывода записи из телефонной книги
+# Функция поиска и возвращения записи из телефонной книги
 def find_data(data):
     with open('phone_book.csv', 'r') as book:
         data_found = []
@@ -14,12 +12,13 @@ def find_data(data):
                     if len(phone_record) > 3:
                         phone_record[3] = f'Описание: {phone_record[3]}'
                     data_found.append(phone_record)
-        view.show_ext_data(data_found)
+        return data_found
 
-# Функция выводит всю телефонную книгу
+
+# Функция возвращает всю телефонную книгу
 def full_output():
     with open('phone_book.csv', 'r') as book:
         data_found = []
         for line in book:
             data_found.append(line.replace(';', ', ').replace('\n', ''))
-        view.show_data(data_found)
+        return data_found

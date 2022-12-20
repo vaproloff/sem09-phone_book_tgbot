@@ -8,6 +8,7 @@ def add_to_txt(data):
         data_str += '\n'
         book.write(data_str)
 
+
 # Функция добавления записи в базу в csv
 def add_to_csv(data):
     with open('phone_book.csv', 'a') as book:

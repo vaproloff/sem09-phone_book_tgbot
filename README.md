@@ -6,7 +6,8 @@
 ### Группа №1
 * [**Константин Пивнов**](https://gb.ru/users/1215073):
 [controller](https://github.com/vaproloff/sem08-phonebook/blob/main/controller.py),
-[validate](https://github.com/vaproloff/sem08-phonebook/blob/main/validate.py)
+[validate](https://github.com/vaproloff/sem08-phonebook/blob/main/validate.py),
+telegram-bot
 
 * [**Руслан**](https://gb.ru/users/3100909):
 [extract](https://github.com/vaproloff/sem08-phonebook/blob/main/extract.py)
