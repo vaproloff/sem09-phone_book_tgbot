@@ -1,3 +1,10 @@
+# Функция добавления записи в базу в csv
+def add_to_csv(data):
+    with open('phone_book.csv', 'a') as book:
+        data_str = str.join(';', data) + '\n'
+        book.write(data_str)
+
+
 # Функция поиска и возвращения записи из телефонной книги
 def find_data(data):
     with open('phone_book.csv', 'r') as book:
