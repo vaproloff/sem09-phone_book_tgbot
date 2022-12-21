@@ -1,7 +1,7 @@
 import db_interact
 import validate
 from telegram import Update, ReplyKeyboardMarkup, ReplyKeyboardRemove
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, ConversationHandler, MessageHandler, filters
+from telegram.ext import CommandHandler, ContextTypes, ConversationHandler, MessageHandler, filters
 
 PRESS_MENU_BUTTON, INPUT_NEW_DATA, INPUT_SEARCH_DATA = range(3)
 
